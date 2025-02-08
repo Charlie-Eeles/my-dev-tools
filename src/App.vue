@@ -12,7 +12,21 @@ import { RouterView } from "vue-router";
 body {
   margin: 0;
   padding: 0;
-  color: #333333;
+  color: #cdd6f4;
   font-family: "Roboto", sans-serif;
+  background-color: #1e1e1e;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #df8e1d;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #fe640b;
 }
 </style>

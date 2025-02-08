@@ -12,7 +12,7 @@ function formatJson(model) {
     const formatted = JSON.stringify(JSON.parse(model.getValue()), null, 4);
     model.setValue(formatted);
   } catch (e) {
-    alert("Invalid JSON. Please fix sytax errors before formatting.");
+    alert("Invalid JSON. Please fix syntax errors before formatting.");
   }
 }
 
@@ -37,6 +37,9 @@ function setupMonaco() {
   <div class="container">
     <div class="toolbar">
       <button @click="formatJson(leftModel)">Format left JSON</button>
+      <RouterLink to="/">
+        <button @click="">Home</button>
+      </RouterLink>
       <button @click="formatJson(rightModel)">Format right JSON</button>
     </div>
     <div ref="editorContainer" class="editor-container"></div>
@@ -56,22 +59,9 @@ function setupMonaco() {
   justify-content: space-between;
 }
 
-button {
-  padding: 8px 16px;
-  cursor: pointer;
-  border: none;
-  background-color: #0078d7;
-  color: white;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #005a9e;
-}
-
 .editor-container {
   height: 90%;
   width: 100%;
-border: 1px solid black;
+  border: 1px solid black;
 }
 </style>

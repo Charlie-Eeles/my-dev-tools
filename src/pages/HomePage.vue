@@ -5,7 +5,9 @@ import { RouterLink } from "vue-router";
 <template> 
   <div class="container">
     <nav>
-      <RouterLink to="/jde">JSON Diff Editor</RouterLink>
+      <RouterLink to="/jde">
+        <button @click="">JSON Diff Editor</button>
+      </RouterLink>
     </nav>
   </div>
 </template>
