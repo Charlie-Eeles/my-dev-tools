@@ -1,7 +1,7 @@
 # my_dev_tools
 
 This project is for tooling that helps in my day to day development.
-It's specifically developed to be quick and easy to use and confidence that no data leaves the client.
+It's specifically developed to be quick and easy to use and with confidence that no data leaves the client.
 
 ## Project Setup
 
